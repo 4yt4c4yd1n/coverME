@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "coverME",
+    "version": "1.1",
+  
+    "description": "Writes a cover letter for your job applications",
+  
+    "icons": {
+      "48": "icons/cover48.png"
+    },
+    "background": {
+    "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.linkedin.com/*"],
+        "js": ["coverME.js"]
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icons/cover48.png",
+      "default_title": "Whereami?"
+    },
+
+    "permissions": ["webRequest", "tabs"],
+    "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "42.0"
+    }
+  }
+
+  }
