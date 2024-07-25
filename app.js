@@ -20,7 +20,8 @@ app.post("/", (req, res) =>{
 signature = `\\footnote{
             \\begin{center}
             \\includegraphics[width=32px]{ChatGPT-Logo.png}\\\\
-            \\scriptsize{Information on this page is correct, but it was generated automatically. For more information visit:[COMING SOON]}
+            \\scriptsize{Information on this page is correct, but it was generated automatically. \\\\
+            For more information visit: github.com/4yt4c4yd1n/coverME }
             \\end{center}}`
 
 async function getResponse(prompt){
@@ -33,9 +34,9 @@ async function getResponse(prompt){
 
     TeXstring = TeXstring.slice(0, TeXstring.lastIndexOf('\\')) + signature + TeXstring.slice(TeXstring.lastIndexOf('\\'))
 
-    var filename = 'CL_Aydin_'+Date.now()
-    var texdir = 'C:\\Users\\sikti\\Downloads\\isbasvurusu\\coverletter\\texshit\\'
-    var pdfdir = 'C:\\Users\\sikti\\Downloads\\isbasvurusu\\coverletter\\'
+    var filename = '[Filename]'+Date.now()
+    var texdir = '[DIR]'
+    var pdfdir = '[DIR]'
 
     fs.writeFile(texdir+filename+'.tex', TeXstring, err => {
         if (err) {
