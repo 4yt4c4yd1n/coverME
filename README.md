@@ -8,4 +8,4 @@
 6. Go to about:debugging#/runtime/this-firefox, click on 'Load Temporary Addon' and select any file in extension folder
 7. A cover letter should be generated when you click on the extension icon.
 
-Pdf generation may fail due to ChatGPT hallucinating. Resetting the server and retrying is recommended.
+Pdf generation may fail due to ChatGPT hallucinating/not following directives. Retrying until desired result is recommended.
