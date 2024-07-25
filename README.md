@@ -6,6 +6,6 @@
 4. In extension/coverME.js customize the prompt to your liking
 5. Open a terminal in coverME directory and run `node app.js`
 6. Go to about:debugging#/runtime/this-firefox, click on 'Load Temporary Addon' and select any file in extension folder
-7. A cover letter should be generated when you click on the extension icon.
+7. A cover letter should be generated when you click on the extension icon while a LinkedIn job listing tab is active.
 
 Pdf generation may fail due to ChatGPT hallucinating/not following directives. Retrying until desired result is recommended.
